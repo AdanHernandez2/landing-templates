@@ -1,0 +1,277 @@
+:root {
+    --black: #121212;
+    --black-two: #151515;
+    --white: #fff;
+    --blue: #026fff;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+h1, h2, h3 {
+    font-weight: 600;
+    margin: 0 0 2rem 0;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.container {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.header {
+    background-color: var(--black);
+    padding: 5rem 0;
+    color: var(--white);
+}
+@media (min-width: 768px) { 
+    .header__container {
+        display: flex;
+    }
+}
+.header__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header__text h1 , .header__text h2 {
+    margin: 0;
+}
+.header__text h1 {
+    color:var(--blue);
+}
+.header__text p {
+    margin: 0;
+}
+.header__text p:nth-child(1n) {
+    margin-top:1rem;
+}
+.header__image img {
+    width: 90%;
+    max-width: 700px;
+}
+/** Proyectos **/
+.projects {
+    padding: 5rem 0;
+}
+.projects h2 {
+    color: var(--blue);
+}
+.card {
+    width: 100%;
+    max-width: 60rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+    transition: all ease .4s;
+    margin-bottom: 3rem;
+}
+@media (min-width: 768px) { 
+      .card {
+        margin-bottom: 0;
+      }
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.3);
+}
+.card__img {
+    margin: 0;
+}
+.card__img img {
+    height: 200px;
+    object-fit: cover;
+}
+.card__info {
+    text-align: center;
+    margin: 2rem;
+    margin-top: -4rem;
+    padding: .5rem;
+    background-color: var(--white);
+    position: relative;
+}
+.card__info h3 {
+    font-size: 1.8rem;
+    text-transform:capitalize;
+    font-weight: 500;
+}
+.card__btn {
+    text-decoration: none;
+    border: 1px solid var(--blue);
+    color:var(--blue);
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    transition: all ease .5s;
+}
+.card__btn:hover {
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+@media (min-width: 768px) { 
+    .projects__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:3rem;
+    }      
+}
+/** subir arriba **/
+#buttonUp{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba( 5, 111, 255, .9);
+    justify-content: center;
+    position: fixed;
+    color: #FFF;
+    font-size: 25px;
+    display: flex;
+    z-index: 4;
+    bottom: 100px;
+    right: 22px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transform: scale(0);
+}
+#buttonUp:hover{
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+/** footer **/
+.footer {
+    text-align: center;
+    padding-top: 5rem;
+    background-color: var(--black);
+    color:var(--white);
+}
+.footer h2 {
+    color: var(--blue);
+}
+.footer > p {
+    padding: 1rem;
+    background-color: var(--black-two);
+    margin: 0;
+}
+.social-icon {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) { 
+    .social-icon {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+.social-icon .icon {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10rem;
+    background-color: var(--white);
+    margin: 2rem;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 8rem;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.social-icon .icon:hover {
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--white);
+}
+.icon:hover i {
+    color: var(--white);
+}
+.icon .fa-facebook-f {
+    color:#1A6ED8;
+}
+.fb:hover {
+    background-color: #1A6ED8;
+}
+.icon .fa-twitter {
+    color:#1DA1F2;
+}
+.tw:hover {
+    background-color: #1DA1F2;
+}
+.icon .fa-codepen {
+    color:var(--black-two);
+}
+.cp:hover {
+    background-color: var(--black-two);
+}
+.icon .fa-github {
+    color:var(--black-two);
+}
+.git:hover {
+    background-color: var(--black-two);
+}
+
+/**btn regresar**/
+.btn__regresar {
+    position: fixed;
+    padding: 1rem 2rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 30px;
+    top: 3rem;
+    left: 2rem;
+    cursor: pointer;
+    z-index: 9;
+    transition: transform .3s;
+}
+.btn__regresar:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 13rem;
+    height: 5rem;
+    background: var(--blue);
+    border-radius: 30px;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+@keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+  .btn__regresar:hover {
+    transform: scale(1.1);
+  }

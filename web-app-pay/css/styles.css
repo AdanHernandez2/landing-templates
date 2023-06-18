@@ -228,7 +228,7 @@ img {
 }
 .seguridad::after {
   bottom: -10rem;
-  left: 0;
+  right: 1px;
   transform: rotate(3deg);
 }
 .seguridad__heading {

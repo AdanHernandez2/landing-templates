@@ -1,3 +1,14 @@
+:root {
+    --primario: #1073BA;
+    --secundario: #00DA55;
+    --gris:#3B3B3B;
+    --blanco: #ffffff;
+    --negro: #1F1E1E;
+    --grisClaro: #e1e1e1;
+
+    --fuentePrincipal: 'Roboto', sans-serif;
+    --fuenteSecundaria: 'Lato', sans-serif;
+}
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -11,17 +22,6 @@ body {
     line-height: 1.5;
 }
 /** Globales**/
-:root {
-    --primario: #1073BA;
-    --secundario: #00DA55;
-    --gris:#3B3B3B;
-    --blanco: #ffffff;
-    --negro: #1F1E1E;
-    --grisClaro: #e1e1e1;
-
-    --fuentePrincipal: 'Roboto', sans-serif;
-    --fuenteSecundaria: 'Lato', sans-serif;
-}
 .contenedor {
     max-width: 120rem;
     width: 90%;

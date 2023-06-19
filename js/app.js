@@ -18,10 +18,3 @@ window.onscroll = function(){
         buttonUp.style.transform = "scale(0)";
     }
 }
-
-let regresar = document.querySelector(".btn__regresar");
-
-regresar.addEventListener("click", () => {
-    window.location.href = "/";
-});
-

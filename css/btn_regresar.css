@@ -1,0 +1,44 @@
+:root {
+    --white: #fff;
+    --blue: #026fff;
+}
+/**btn regresar**/
+.btn__regresar {
+    position: fixed;
+    padding: 1rem 2rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 30px;
+    top: 3rem;
+    left: 2rem;
+    cursor: pointer;
+    z-index: 9;
+    transition: transform .3s;
+}
+.btn__regresar:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 13rem;
+    height: 5rem;
+    background: var(--blue);
+    border-radius: 30px;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+@keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+  .btn__regresar:hover {
+    transform: scale(1.1);
+  }

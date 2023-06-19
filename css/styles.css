@@ -50,9 +50,15 @@ img {
     }
 }
 .header__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) { 
+    .header__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+    }     
 }
 .header__text h1 , .header__text h2 {
     margin: 0;

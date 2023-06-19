@@ -105,8 +105,13 @@ img {
     margin: 0;
 }
 .card__img img {
-    height: 200px;
+    height: auto;
     object-fit: cover;
+}
+@media (min-width: 768px) { 
+    .card__img img {
+        height: 200px;
+    }     
 }
 .card__info {
     text-align: center;
@@ -115,11 +120,19 @@ img {
     padding: .5rem;
     background-color: var(--white);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .card__info h3 {
     font-size: 1.8rem;
     text-transform:capitalize;
     font-weight: 500;
+    margin: 1rem 0;
+}
+.card__description {
+    margin: 0;
+    margin-bottom: 2rem;
 }
 .card__btn {
     text-decoration: none;
@@ -128,6 +141,7 @@ img {
     border-radius: 5px;
     padding: 1rem 1rem;
     transition: all ease .5s;
+    margin: 0 auto;
 }
 .card__btn:hover {
     color: var(--black);
@@ -195,8 +209,8 @@ img {
     }
 }
 .social-icon .icon {
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 10rem;
     color: var(--white);
     background-color: var(--white);
@@ -204,12 +218,15 @@ img {
     text-align: center;
     text-decoration: none;
     font-size: 4rem;
-    line-height: 8rem;
+    line-height: 7rem;
     overflow: hidden;
     transition: all .3s ease;
 }
+.social-icon .icon span {
+    font-size: 3rem;
+}
 .social-icon .icon:hover {
-    width: 40rem;
+    width: 35rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -218,17 +235,11 @@ img {
 .icon:hover i {
     color: var(--white);
 }
-.icon .fa-facebook-f {
-    color:#1A6ED8;
+.icon .fa-linkedin {
+    color:#0e76a8;
 }
-.fb:hover {
-    background-color: #1A6ED8;
-}
-.icon .fa-twitter {
-    color:#1DA1F2;
-}
-.tw:hover {
-    background-color: #1DA1F2;
+.ld:hover {
+    background-color: #0e76a8;
 }
 .icon .fa-codepen {
     color:var(--black-two);

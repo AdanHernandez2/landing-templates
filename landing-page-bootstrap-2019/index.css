@@ -2,6 +2,9 @@
     background-color: #026fff;
     color: white;
 }
+#header {
+    z-index: 8;
+}
 #header img{
     width: 80px;
 

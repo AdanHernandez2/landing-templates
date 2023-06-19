@@ -23,6 +23,9 @@ html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
+body {
+    font-size: 1.6rem;
+}
 header{
     position: relative;
     display: flex;

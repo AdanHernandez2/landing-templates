@@ -5,7 +5,7 @@ document.head.innerHTML += stileRegresar;
 document.body.innerHTML += btnRegresar;
 
 function btn_Regresar() {
-    window.location.href = "/";
+    window.location.href = "/landing-template";
 }
     
 

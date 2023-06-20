@@ -1,7 +1,8 @@
 :root {
     --black: #121212;
-    --black-two: #151515;
+    --black-two: #1c1b1bed;
     --white: #fff;
+    --textwhite: #ffffffe3;
     --blue: #026fff;
 }
 html {
@@ -42,7 +43,7 @@ img {
 .header {
     background-color: var(--black);
     padding: 5rem 0;
-    color: var(--white);
+    color: var(--textwhite);
 }
 @media (min-width: 768px) { 
     .header__container {
@@ -118,6 +119,7 @@ img {
     margin: 2rem;
     margin-top: -4rem;
     padding: .5rem;
+    color: var(--black-two);
     background-color: var(--white);
     position: relative;
     display: flex;
@@ -181,7 +183,7 @@ img {
     text-align: center;
     padding-top: 5rem;
     background-color: var(--black);
-    color:var(--white);
+    color:var(--textwhite);
 }
 .footer h2 {
     color: var(--blue);
@@ -212,7 +214,7 @@ img {
     width: 7rem;
     height: 7rem;
     border-radius: 10rem;
-    color: var(--white);
+    color: var(--textwhite);
     background-color: var(--white);
     margin: 2rem;
     text-align: center;

@@ -1,4 +1,6 @@
-$color : #1e1e1e;
+@use 'header/header';
+
+$color : #fff;
 
 body {
     background-color: $color;

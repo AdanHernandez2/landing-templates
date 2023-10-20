@@ -9,17 +9,20 @@
   "author": "Luis Hernandez",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "gulp": "^4.0.2",
+    "autoprefixer": "^10.4.16",
     "gulp-postcss": "^9.0.1",
-    "postcss": "^8.4.22"
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.4"
   },
   "dependencies": {
-    "gulp-sass": "^5.1.0",
-    "sass": "^1.62.0"
+    "gulp": "^4.0.2"
   },
   "browserslist": [
     "last 1 version",
     "> 1%"
   ]
 }
+
+  
+

@@ -1,7 +1,3 @@
-@use 'header/header';
-
-$color : #fff;
-
-body {
-    background-color: $color;
-}
+@use 'base';
+@use 'header';
+@use 'inicio';

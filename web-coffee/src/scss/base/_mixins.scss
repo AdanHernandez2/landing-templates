@@ -20,6 +20,8 @@
 
 @mixin grid($columnas, $espaciado) {
     display: grid;
+    display: -ms-grid;
     grid-template-columns: repeat($columnas, 1fr);
-    column-gap: $espaciado;
+    -ms-grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
 }
